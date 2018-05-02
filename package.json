@@ -3,16 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start":"heroku local:start",
+    "start": "heroku local:start",
     "start_old": "node ./bin/www",
     "super": "supervisor ./bin/www"
   },
-
-  "engines":{
+  "engines": {
     "node": "8.9.1",
     "npm": "5.6.0"
   },
-
   "dependencies": {
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
@@ -21,6 +19,7 @@
     "express": "~4.15.5",
     "express-partials": "^0.3.0",
     "jade": "~1.11.0",
+    "method-override": "^2.3.10",
     "morgan": "~1.9.0",
     "serve-favicon": "~2.4.5",
     "supervisor": "^0.12.0"
