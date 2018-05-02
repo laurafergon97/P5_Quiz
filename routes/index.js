@@ -13,6 +13,10 @@ router.get('/credits',function(req,res,next){
   res.render('credits');
 });
 
+router.param('quizId', quizController.load);
+
+
+
 router.get('/quizzes',                     quizController.index);
 router.get('/quizzes/:quizId(\\d+)',       quizController.show);
 router.get('/quizzes/new',                 quizController.new);
